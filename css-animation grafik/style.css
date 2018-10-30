@@ -1,0 +1,186 @@
+#scene {
+
+    width: 100vw;
+    height: 56.25vw;
+    margin: 0;
+    position: relative;
+
+}
+
+#baggrund {
+
+    background-image: url(baggrund-01.svg);
+    width: 100vw;
+    height: 56.25vw;
+    background-size: 100%;
+
+}
+
+#tog {
+    background-image: url("tog.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 75vw;
+    height: 30vw;
+    position: absolute;
+    left: 35vw;
+    top: 25vw;
+    z-index: 1;
+
+}
+
+#bom {
+    background-image: url("bom.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 35vw;
+    height: 5vw;
+    position: absolute;
+    left: 31vw;
+    top: 31vw;
+    z-index: 1;
+
+}
+
+
+#forgrund {
+
+    background-image: url("forgrund-01.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    right: 0vw;
+    top: 0vw;
+    z-index: 1;
+
+}
+
+
+#bil {
+
+    background-image: url("bil.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 18vw;
+    height: 18vw;
+    position: absolute;
+    right: 35vw;
+    top: 30vw;
+    z-index: 2;
+
+}
+
+
+.koer_tog {
+
+    animation-name: koer_tog;
+    animation-iteration-count: infinite;
+
+    animation-duration: 10s;
+
+}
+
+@keyframes koer_tog {
+    0% {
+        transform: translateX(100vw)
+    }
+
+    100% {
+        transform: translateX(-150vw)
+    }
+
+}
+
+.op {
+    animation-name: op;
+    transform-origin: 12% 40%;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-duration: 7s;
+    animation-delay: 3s;
+
+}
+
+@keyframes op {
+    50% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(-90deg)
+    }
+
+}
+
+
+.koer_bil {
+
+    animation-name: koer_bil;
+    animation-iteration-count: 3;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-timing-function: ease-in;
+
+}
+
+
+@keyframes koer_bil {
+    0% {
+        transform: translateY(0vw) scale(1);
+
+    }
+
+    50% {
+        transform: translateY(-10vw) scale(0.5);
+
+    }
+
+
+    100% {
+        transform: translateY(-20vw) scale(0.1);
+    }
+
+}
+
+
+
+
+
+
+#start {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    width: 100vw;
+    height: 56.2%vw;
+
+}
+
+. hide {
+
+    display: none;
+}
+
+.fade_in {
+
+    animation-name: fade_in_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes fade_in_kf {
+
+    0% {
+
+        opacity: 0;
+    }
+
+    100% {
+
+        opacity: 0;
+    }
